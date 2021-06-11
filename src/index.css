@@ -1,6 +1,80 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  margin: auto;
-  max-width: 38rem;
-  padding: 2rem;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.element {
+    position: relative;
+}
+
+#editor {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid black; */
+}
+
+.element {
+    /* position: relative; */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    flex-grow: 0;
+    padding: 1rem 0;
+    text-align: end;
+}
+
+.editor {
+    border: 1px solid #333;
+    position: relative;
+    height: 500px;
+    flex-grow: 1;
+}
+
+#editor-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#editor-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#editor-3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
